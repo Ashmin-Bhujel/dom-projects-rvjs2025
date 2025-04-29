@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Pico CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.sand.min.css"
+    />
+
+    <!-- Internal CSS -->
+    <style>
+      html {
+        background-color: #212121;
+      }
+
+      main {
+        text-align: center;
+      }
+
+      #description {
+        color: #fafbfc;
+      }
+    </style>
+
+    <title>Background Color Changer</title>
+  </head>
+
+  <body>
+    <header class="container">
+      <h1>Background Color Changer</h1>
+    </header>
+
+    <main class="container">
+      <p id="description">
+        Click on below buttons with specified color to change background color.
+      </p>
+
+      <section>
+        <button data-background-color="#dc143c" class="color-button">
+          Red
+        </button>
+
+        <button data-background-color="#32cd32" class="color-button">
+          Green
+        </button>
+
+        <button data-background-color="#4169e1" class="color-button">
+          Blue
+        </button>
+
+        <button data-background-color="#ffa500" class="color-button">
+          Orange
+        </button>
+      </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+      const colorButtons = document.querySelectorAll(".color-button");
+
+      colorButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // Get background color value from data attribute
+          const backgroundColor = button.dataset.backgroundColor;
+
+          // Change background color
+          const html = document.querySelector("html");
+          html.style.backgroundColor = backgroundColor;
+        });
+      });
+    </script>
+  </body>
+</html>
