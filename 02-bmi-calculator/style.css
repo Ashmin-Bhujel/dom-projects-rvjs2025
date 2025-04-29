@@ -1,0 +1,21 @@
+form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#result-container,
+#message-container {
+  text-align: center;
+}
+
+#message {
+  color: #d93526;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
