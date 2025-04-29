@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+}
+
+main > * {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+main > p {
+  text-align: justify;
+}
+
+form {
+  padding-block: 1.5rem;
+}
+
+#start-new-game {
+  width: 100%;
+}
+
+#message {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

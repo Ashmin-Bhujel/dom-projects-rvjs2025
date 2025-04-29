@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Pico CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Guess The Number</title>
+  </head>
+
+  <body>
+    <header class="container">
+      <h1>Guess The Number</h1>
+    </header>
+
+    <main class="container">
+      <p>
+        A random number between 1 and 10 will be generated and you have to guess
+        which number got generated. You will get total 5 attempts to guess the
+        number.
+      </p>
+
+      <form>
+        <input
+          type="text"
+          name="user-guess"
+          id="user-guess"
+          placeholder="Enter your guess"
+        />
+        <button type="submit" class="hide show">Submit</button>
+        <button type="button" id="start-new-game" class="hide">
+          Start New Game
+        </button>
+      </form>
+
+      <section>
+        <h3 id="message">Enter your guess to get started.</h3>
+      </section>
+
+      <section>
+        <p id="previous-guesses">Previous guesses: []</p>
+        <p id="remaining-attempts">Remaining attempts: 5</p>
+      </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
