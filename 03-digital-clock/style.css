@@ -1,0 +1,13 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#clock-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}

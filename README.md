@@ -8,5 +8,5 @@ An extension GitHub repository for DOM projects of [revisiting-javascript-2025](
 
 - [x] Project 01 - Background Color Changer
 - [x] Project 02 - BMI Calculator
-- [ ] Project 03 - Digital Clock
+- [x] Project 03 - Digital Clock
 - [ ] Project 04 - Guess the Number
